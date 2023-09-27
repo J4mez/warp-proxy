@@ -2,7 +2,7 @@ version: '3'
 
 services:
   warp:
-    image: ghcr.io/j4mez/warp-proxy:sha256-5fb9714a2c893451e51ae3125c4d30e6e1ee1a2690c0705d710b06b60eca08cd.sig
+    image: ghcr.io/j4mez/warp-proxy:main
     container_name: warp
     restart: always
     ports:
