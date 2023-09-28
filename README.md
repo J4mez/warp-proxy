@@ -13,7 +13,7 @@ version: '3'
 
 services:
   warp:
-    image: caomingjun/warp
+    image: ghcr.io/j4mez/warp-proxy:main
     container_name: warp
     restart: always
     ports:
@@ -65,6 +65,6 @@ HEALTHCHECK --interval=15s --timeout=5s --start-period=30s --retries=3 \
 
 If you don't want the container to restart automatically, you can remove `restart: always` from the `docker-compose.yml`. You can also modify the parameters of the health check through the `docker-compose.yml`.
 
-## Further reading
+## Credits:
 
-Read in my [blog post](https://blog.caomingjun.com/run-cloudflare-warp-in-docker/en/#How-it-works).
+This is a fork of https://github.com/cmj2002/warp-docker
