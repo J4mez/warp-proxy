@@ -13,7 +13,7 @@ version: '3'
 
 services:
   warp:
-    image: ghcr.io/j4mez/warp-proxy:main
+    image: j4mez/warp-proxy:main
     container_name: warp
     restart: always
     ports:
