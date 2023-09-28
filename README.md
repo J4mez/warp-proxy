@@ -28,6 +28,7 @@ services:
       - net.ipv4.conf.all.src_valid_mark=1
     volumes:
       - ./data:/var/lib/cloudflare-warp
+    network_mode: bridge
 ```
 
 Try it out to see if it works:
