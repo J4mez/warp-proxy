@@ -13,7 +13,9 @@ RUN apt-get update && \
     curl -LO https://github.com/ginuerzh/gost/releases/download/v2.11.5/gost-linux-amd64-2.11.5.gz && \
     gunzip gost-linux-amd64-2.11.5.gz && \
     mv gost-linux-amd64-2.11.5 /usr/bin/gost && \
-    chmod +x /usr/bin/gost
+    chmod +x /usr/bin/gost && \
+    apt-get update
+    
 
 # Accept Cloudflare WARP TOS
 RUN mkdir -p /root/.local/share/warp && \
