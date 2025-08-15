@@ -16,7 +16,7 @@ sleep "$WARP_SLEEP"
 
 # if /var/lib/cloudflare-warp/reg.json not exists, register the warp client
 if [ ! -f /var/lib/cloudflare-warp/reg.json ]; then
-    warp-cli register && echo "Warp client registered!"
+    warp-cli registration new && echo "Warp client registered!"
     # if a license key is provided, register the license
     if [ -n "$WARP_LICENSE_KEY" ]; then
         echo "License key found, registering license..."
