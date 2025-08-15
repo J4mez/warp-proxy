@@ -12,7 +12,7 @@ RUN apt-get update && \
     apt-get autoremove -y && \
     curl -LO https://github.com/ginuerzh/gost/releases/download/v2.12.0/gost_2.12.0_linux_amd64.tar.gz && \
     tar -xf gost_2.12.0_linux_amd64.tar.gz && \
-    mv gost_2.12.0_linux_amd64 /usr/bin/gost && \
+    mv gost /usr/bin/gost && \
     chmod +x /usr/bin/gost && \
     apt-get update
     
