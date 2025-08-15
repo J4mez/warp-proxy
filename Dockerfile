@@ -17,7 +17,7 @@ RUN apt-get update && \
     apt-get update
     
 
-# Accept Cloudflare WARP TOS
+# Accept Cloudflare WARP TOs
 RUN mkdir -p /root/.local/share/warp && \
     echo -n 'yes' > /root/.local/share/warp/accepted-tos.txt
 
