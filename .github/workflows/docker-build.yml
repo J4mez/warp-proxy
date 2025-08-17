@@ -4,10 +4,10 @@ name: Docker build
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
 # documentation.
+#  schedule:
+#    - cron: '22 17 * * *'
 
 on:
-  schedule:
-    - cron: '22 17 * * *'
   push:
     branches: [ "main" ]
     # Publish semver tags as releases.
