@@ -1,6 +1,6 @@
 # warp-docker
 
-Run official [Cloudflare WARP](https://1.1.1.1/) client in Docker.
+Run official [Cloudflare WARP](https://1.1.1.1/) client in Docker
 
 ## Usage
 
